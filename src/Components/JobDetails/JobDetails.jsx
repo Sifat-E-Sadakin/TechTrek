@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faLocation, faLocationDot, faMailBulk, faMoneyBill, faMoneyBill1, faMoneyBill1Wave, faPhone, faUser, faUserAlt, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 
 const JobDetails = () => {
 
@@ -27,19 +29,19 @@ const JobDetails = () => {
                     <h2 className='font-bold my-2'>Job Details</h2>
                     <hr />
                     <div className='my-2 mt-5'>
-                        <h2><span className='font-semibold  '>Salary: </span>{salary}</h2>
+                        <h2><FontAwesomeIcon icon={faMoneyBill1Wave} /><span className='font-semibold  '> Salary: </span>{salary}</h2>
                     </div>
                     <div className='my-2'>
-                        <h2><span className='font-semibold  '>Job Title: </span>{job_title}</h2>
+                        <h2><FontAwesomeIcon icon={faUserGraduate} /><span className='font-semibold  '> Job Title: </span>{job_title}</h2>
                     </div>
                     
                     
 
                     <h2 className='font-bold my-2 mt-10'>Contact Information</h2>
                     <hr />
-                    <h2 className='py-1 pt-5'><span className='font-semibold '>Phone: </span>{phone}</h2>
-                    <h2 className='py-1'><span className='font-semibold '>Email: </span>{email}</h2>
-                    <h2 className='py-1'><span className='font-semibold '>Address: </span>{location}</h2>
+                    <h2 className='py-1 pt-5'><FontAwesomeIcon icon={faPhone} /><span className='font-semibold '> Phone: </span>{phone}</h2>
+                    <h2 className='py-1'><FontAwesomeIcon icon={faMailBulk} /><span className='font-semibold '>  Email: </span>{email}</h2>
+                    <h2 className='py-1'><FontAwesomeIcon icon={faLocation} /><span className='font-semibold '> Address: </span>{location}</h2>
 
                     <button className='btn relative top-20 w-full'>Apply Now</button>
                 </div>
