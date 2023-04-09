@@ -1,10 +1,22 @@
 import React from 'react';
+import ShowCategoryList from '../ShowCategoryList/ShowCategoryList';
 
-const JobCategory = () => {
+const JobCategory = ({categoryList}) => {
+
+    
     return (
         <div className='text-center m-10'>
             <h1 className='m-4'>Job Category list</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nam!</p>
+            <p>Find your job According to your background...</p>
+
+            <div className='flex justify-between mt-5'>
+            {
+                categoryList.map(job=> <ShowCategoryList list={job} key={job.id} ></ShowCategoryList> )
+            }
+
+            </div>
+
+            
         </div>
     );
 };

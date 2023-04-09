@@ -5,12 +5,14 @@ import { useLoaderData } from 'react-router-dom';
 
 const Landing = () => {
 
+   let categoryList = useLoaderData();
+
    
     return (
         <div>
             <Header></Header>
 
-            <JobCategory></JobCategory>
+            <JobCategory categoryList={categoryList}></JobCategory>
             
             
         </div>

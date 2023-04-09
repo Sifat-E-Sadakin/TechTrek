@@ -6,3 +6,6 @@ let LoadCategoryList = async()=>{
     return list;
 
 }
+
+
+export {LoadCategoryList}
