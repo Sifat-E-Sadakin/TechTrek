@@ -14,7 +14,20 @@ let LoadTrendingJobs = async()=>{
     return list;
 }
 
+let LoadJobDetails= async(id)=>{
+
+    let listRaw = await fetch('TrendingJobs.json');
+    let list = await listRaw.json();
+
+    let getDetails= list.find(job=> job.id==id);
+    // console.log(getDetails);
+
+    return getDetails;
+
+}
+
 export {
     LoadCategoryList,
-    LoadTrendingJobs
+    LoadTrendingJobs,
+    LoadJobDetails
 }

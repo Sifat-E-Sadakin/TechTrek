@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ShowTrendingJobs = ({jobs}) => {
     let {job_title, company, job_category, location,  salary, logo, id }= jobs;
@@ -33,7 +34,7 @@ const ShowTrendingJobs = ({jobs}) => {
                 </div>
             </div>
             <button className='btn btn-sm'>
-                View Details
+               <Link to={`./jobDetails/${id}`}>View Details</Link> 
             </button>
         </div>
     );

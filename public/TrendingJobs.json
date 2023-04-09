@@ -6,7 +6,13 @@
       "job_category": ["Full-time", "Onsite"],
       "location": "Mountain View, CA",
       "salary": "$120,000 - $150,000 per year",
-      "logo": "./assets/Logo/google-logo-9834.png"
+      "logo": "./assets/Logo/google-logo-9834.png",
+      "job_description": "We are looking for a highly skilled software engineer to join our team. You will be responsible for developing and maintaining high-quality software that meets our clients' needs.",
+      "job_responsibility": "Design and develop software solutions that meet business requirements, collaborate with cross-functional teams to identify and prioritize software features, write and maintain clean, well-documented code, debug and troubleshoot software issues",
+      "educational_requirement": "Bachelor's degree in Computer Science or related field",
+      "experience": "3+ years of experience in software development",
+      "phone": "+1 123-456-7890",
+      "email": "jobs@google.com"
     },
     {
       "id": 2,
@@ -15,7 +21,13 @@
       "job_category": ["Remote", "Part-time"],
       "location": "Anywhere",
       "salary": "$80,000 - $100,000 per year",
-      "logo": "./assets/Logo/microsoft-logo-png-2396.png"
+      "logo": "./assets/Logo/microsoft-logo-png-2396.png",
+      "job_description": "We are seeking a highly motivated data analyst to join our team. You will be responsible for collecting, analyzing, and interpreting large datasets to drive business decisions.",
+      "job_responsibility": "Collect and analyze large datasets using SQL and other tools, develop data visualizations and reports to communicate findings to stakeholders, collaborate with cross-functional teams to identify and prioritize data analysis projects, continuously improve data collection and analysis processes",
+      "educational_requirement": "Bachelor's degree in Mathematics, Statistics, Computer Science or related field",
+      "experience": "2+ years of experience in data analysis",
+      "phone": "+1 123-456-7890",
+      "email": "jobs@microsoft.com"
     },
     {
       "id": 3,
@@ -24,7 +36,13 @@
       "job_category": ["Full-time", "Onsite"],
       "location": "Seattle, WA",
       "salary": "$130,000 - $160,000 per year",
-      "logo": "./assets/Logo/amazon-png-logo-vector-6695.png"
+      "logo": "./assets/Logo/amazon-png-logo-vector-6695.png",
+      "job_description": "We are seeking a highly skilled cybersecurity specialist to join our team. You will be responsible for designing and implementing security solutions to protect our company's assets.",
+      "job_responsibility": "Identify and evaluate security risks and vulnerabilities, develop and implement security policies and procedures, monitor systems for security breaches and respond to security incidents, stay up-to-date with the latest security technologies and trends",
+      "educational_requirement": "Bachelor's degree in Computer Science or related field",
+      "experience": "5+ years of experience in cybersecurity",
+      "phone": "+1 123-456-7890",
+      "email": "jobs@amazon.com"
     },
     {
       "id": 4,
@@ -33,7 +51,13 @@
       "job_category": ["Full-time", "Onsite"],
       "location": "Cupertino, CA",
       "salary": "$100,000 - $120,000 per year",
-      "logo": "./assets/Logo/samsung-logo-png-1300.png"
+      "logo": "./assets/Logo/samsung-logo-png-1300.png",
+      "job_description": "We are looking for a talented UX designer to join our team. You will be responsible for designing and creating engaging user experiences for our products and services.",
+      "job_responsibility": "Collaborate with product managers, engineers, and other designers to identify and prioritize user needs, develop wireframes, prototypes, and visual designs that meet business and user requirements, conduct user research and testing to validate design decisions, continuously iterate and improve designs based on feedback",
+      "educational_requirement": "Bachelor's or Master's degree in Human-Computer Interaction, Design, or related field",
+      "experience": "3+ years of experience in UX design",
+      "phone": "+1 123-456-7890",
+      "email": "jobs@apple.com"
     },
     {
       "id": 5,
@@ -42,7 +66,13 @@
       "job_category": ["Full-time", "Remote"],
       "location": "Menlo Park, CA",
       "salary": "$150,000 - $180,000 per year",
-      "logo": "./assets/Logo/logo-facebookpng-32251.png"
+      "logo": "./assets/Logo/logo-facebookpng-32251.png",
+      "job_description": "We are seeking a skilled frontend developer to join our team. You will be responsible for developing and maintaining the user interface of our web and mobile applications.",
+      "job_responsibility": "Collaborate with product managers, designers, and backend developers to implement user interfaces that meet business and user requirements, write clean, efficient, and well-documented code, debug and troubleshoot frontend issues, continuously improve frontend development processes",
+      "educational_requirement": "Bachelor's degree in Computer Science or related field",
+      "experience": "3+ years of experience in frontend development",
+      "phone": "+1 123-456-7890",
+      "email": "jobs@facebook.com"
     },
     {
       "id": 6,
@@ -51,7 +81,13 @@
       "job_category": ["Remote", "Full-time"],
       "location": "Anywhere",
       "salary": "$140,000 - $170,000 per year",
-      "logo": "./assets/Logo/netflix-logo-png-2562.png"
+      "logo": "./assets/Logo/netflix-logo-png-2562.png",
+      "job_description": "We are seeking an experienced cloud architect to join our team. You will be responsible for designing and implementing cloud-based solutions for our clients.",
+      "job_responsibility": "Design and implement cloud-based solutions that meet business and technical requirements, collaborate with clients to understand their cloud needs and provide recommendations, ensure the security, scalability, and availability of cloud-based systems, stay up-to-date with the latest cloud technologies and trends",
+      "educational_requirement": "Bachelor's or Master's degree in Computer Science, Information Technology, or related field",
+      "experience": "8+ years of experience in cloud architecture and design",
+      "phone": "+1 123-456-7890",
+      "email": "jobs@ibm.com"
     }
   ]
   

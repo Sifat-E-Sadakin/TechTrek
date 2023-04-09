@@ -13,7 +13,7 @@ const TrendingJobs = ({trendingJobs}) => {
             </div>
             <div className='grid grid-cols-2 '>
                 {
-                    trendingJobs.map(job=> <ShowTrendingJobs jobs={job}></ShowTrendingJobs>)
+                    trendingJobs.map(job=> <ShowTrendingJobs jobs={job} key={job.id}></ShowTrendingJobs>)
                 }
 
             </div>

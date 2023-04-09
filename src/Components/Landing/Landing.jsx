@@ -19,7 +19,7 @@ const Landing = () => {
 },[]);
 
    
-   console.log(trendingJobs);
+//    console.log(trendingJobs);
 
    
     return (
