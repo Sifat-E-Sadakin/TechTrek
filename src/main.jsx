@@ -9,8 +9,9 @@ import {
 import Header from './Components/Header/Header';
 import JobCategory from './Components/JobCategory/JobCategory';
 import Landing from './Components/Landing/Landing';
-import { LoadCategoryList, LoadJobDetails, LoadTrendingJobs } from './Components/LoadData/LoadData';
+import { LoadAppliedJobs, LoadCategoryList, LoadJobDetails, LoadTrendingJobs } from './Components/LoadData/LoadData';
 import JobDetails from './Components/JobDetails/JobDetails';
+import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,17 @@ const router = createBrowserRouter([
         path: '/jobDetails/:Id',
         element: <JobDetails></JobDetails>,
         loader: ({params})=>LoadJobDetails(params.Id)
+      },
+     
+      {
+        path: '/appliedJobs',
+        element: <AppliedJobs></AppliedJobs>,
+        loader: LoadAppliedJobs,
+       
+      },
+      {
+        path: '/*',
+        element: <div>440044</div>
       }
      
     ],

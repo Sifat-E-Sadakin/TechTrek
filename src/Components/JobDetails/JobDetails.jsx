@@ -2,13 +2,20 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faLocation, faLocationDot, faMailBulk, faMoneyBill, faMoneyBill1, faMoneyBill1Wave, faPhone, faUser, faUserAlt, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
+import { addToDb } from '../../Utilities/LocalStorage';
 
 const JobDetails = () => {
 
     let jobDetails= useLoaderData();
     // console.log(jobDetails);
 
-    let {job_description,job_responsibility,educational_requirement, experience, phone,email , salary, job_title, location }=jobDetails;
+    let {id, job_description,job_responsibility,educational_requirement, experience, phone,email , salary, job_title, location }=jobDetails;
+
+    let apply = (id)=>{
+        console.log('applied',id);
+        addToDb(id);
+
+    }
 
     return (
         <div>
@@ -43,7 +50,7 @@ const JobDetails = () => {
                     <h2 className='py-1'><FontAwesomeIcon icon={faMailBulk} /><span className='font-semibold '>  Email: </span>{email}</h2>
                     <h2 className='py-1'><FontAwesomeIcon icon={faLocation} /><span className='font-semibold '> Address: </span>{location}</h2>
 
-                    <button className='btn relative top-20 w-full'>Apply Now</button>
+                    <button className='btn relative top-20 w-full' onClick={()=>apply(id)}>Apply Now</button>
                 </div>
                 
 
