@@ -7,5 +7,14 @@ let LoadCategoryList = async()=>{
 
 }
 
+let LoadTrendingJobs = async()=>{
+    let listRaw = await fetch('TrendingJobs.json');
+    let list = listRaw.json();
 
-export {LoadCategoryList}
+    return list;
+}
+
+export {
+    LoadCategoryList,
+    LoadTrendingJobs
+}

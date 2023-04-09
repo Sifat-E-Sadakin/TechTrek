@@ -9,7 +9,7 @@ import {
 import Header from './Components/Header/Header';
 import JobCategory from './Components/JobCategory/JobCategory';
 import Landing from './Components/Landing/Landing';
-import { LoadCategoryList } from './Components/LoadData/LoadData';
+import { LoadCategoryList, LoadTrendingJobs } from './Components/LoadData/LoadData';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Landing></Landing>,
         loader: LoadCategoryList,
+       
       },
      
     ],

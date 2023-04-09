@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "job_title": "Software Engineer",
+      "company": "Google",
+      "job_category": ["Full-time", "Onsite"],
+      "location": "Mountain View, CA",
+      "salary": "$120,000 - $150,000 per year",
+      "logo": "./assets/Logo/google-logo-9834.png"
+    },
+    {
+      "id": 2,
+      "job_title": "Data Analyst",
+      "company": "Microsoft",
+      "job_category": ["Remote", "Part-time"],
+      "location": "Anywhere",
+      "salary": "$80,000 - $100,000 per year",
+      "logo": "./assets/Logo/microsoft-logo-png-2396.png"
+    },
+    {
+      "id": 3,
+      "job_title": "Cybersecurity Specialist",
+      "company": "Amazon",
+      "job_category": ["Full-time", "Onsite"],
+      "location": "Seattle, WA",
+      "salary": "$130,000 - $160,000 per year",
+      "logo": "./assets/Logo/amazon-png-logo-vector-6695.png"
+    },
+    {
+      "id": 4,
+      "job_title": "UX Designer",
+      "company": "Samsung",
+      "job_category": ["Full-time", "Onsite"],
+      "location": "Cupertino, CA",
+      "salary": "$100,000 - $120,000 per year",
+      "logo": "./assets/Logo/samsung-logo-png-1300.png"
+    },
+    {
+      "id": 5,
+      "job_title": "Product Manager",
+      "company": "Facebook",
+      "job_category": ["Full-time", "Remote"],
+      "location": "Menlo Park, CA",
+      "salary": "$150,000 - $180,000 per year",
+      "logo": "./assets/Logo/logo-facebookpng-32251.png"
+    },
+    {
+      "id": 6,
+      "job_title": "DevOps Engineer",
+      "company": "Netflix",
+      "job_category": ["Remote", "Full-time"],
+      "location": "Anywhere",
+      "salary": "$140,000 - $170,000 per year",
+      "logo": "./assets/Logo/netflix-logo-png-2562.png"
+    }
+  ]
+  

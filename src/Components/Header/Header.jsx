@@ -22,7 +22,7 @@ const Header = () => {
             </div>
 
             <div>
-                <img src="../../../public/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+                <img src="./assets/All Images/P3OLGJ1 copy 1.png" alt="" />
 
             </div>
             
