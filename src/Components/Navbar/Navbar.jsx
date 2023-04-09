@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='container mx-auto'>
             <div className="navbar bg-base-100 flex justify-between">
                 <div>
                     <a className="btn btn-ghost normal-case text-xl">Hi Hackers</a>
@@ -18,6 +18,7 @@ const Navbar = () => {
                 <button className='btn '>Start Applying</button>
 
                 </div>
+
             
             </div>
             
