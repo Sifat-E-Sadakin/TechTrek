@@ -12,6 +12,7 @@ import Landing from './Components/Landing/Landing';
 import { LoadAppliedJobs, LoadCategoryList, LoadJobDetails, LoadTrendingJobs } from './Components/LoadData/LoadData';
 import JobDetails from './Components/JobDetails/JobDetails';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
+import AssignmentChart from './Components/AssignmentChart/AssignmentChart';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
         element: <AppliedJobs></AppliedJobs>,
         loader: LoadAppliedJobs,
        
+      },
+      {
+        path: '/statistics',
+        element: <AssignmentChart></AssignmentChart>
+
       },
       {
         path: '/*',
