@@ -9,7 +9,7 @@ const ShowTrendingJobs = ({jobs}) => {
     let {job_title, company, job_category, location,  salary, logo, id }= jobs;
 
     return (
-        <div className='border m-5 p-20'>
+        <div className='border border-blue-500 bg-blue-50 m-5 p-16'>
             <div className='py-5'>
                 <img src={logo} alt="" id='logo' style={{width:'250px'}} />
             </div>
@@ -23,8 +23,8 @@ const ShowTrendingJobs = ({jobs}) => {
 
             </div>
             <div className='flex py-4 ' >
-                <h5 className='mx-1 block border border-blue-400 bg-blue-50 rounded p-2 ' >{job_category[0]}</h5>
-                <h5 className='mx-1 block border border-blue-400 bg-blue-50 rounded p-2 ' >{job_category[1]}</h5>
+                <h5 className='mx-1 block border border-blue-400 bg-blue-700 text-white rounded p-2 ' >{job_category[0]}</h5>
+                <h5 className='mx-1 block border border-blue-400 bg-blue-700 text-white rounded p-2 ' >{job_category[1]}</h5>
 
             </div>
             <div className='flex gap-5 py-3'>

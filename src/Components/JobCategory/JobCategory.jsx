@@ -9,7 +9,7 @@ const JobCategory = ({categoryList}) => {
             <h1 className='m-4'>Job Category list</h1>
             <p>Find your job According to your background...</p>
 
-            <div className='flex justify-between mt-5'>
+            <div className='md:flex justify-between mt-5'>
             {
                 categoryList.map(job=> <ShowCategoryList list={job} key={job.id} ></ShowCategoryList> )
             }
