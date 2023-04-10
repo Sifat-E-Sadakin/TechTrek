@@ -13,6 +13,7 @@ import { LoadAppliedJobs, LoadCategoryList, LoadJobDetails, LoadTrendingJobs } f
 import JobDetails from './Components/JobDetails/JobDetails';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import AssignmentChart from './Components/AssignmentChart/AssignmentChart';
+import QNA from './Components/QNA/QNA';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
       {
         path: '/statistics',
         element: <AssignmentChart></AssignmentChart>
+
+      },
+      {
+        path: '/qna',
+        element: <QNA></QNA>
 
       },
       {

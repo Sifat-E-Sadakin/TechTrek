@@ -3,7 +3,7 @@ import JobCategory from '../JobCategory/JobCategory';
 
 const Header = () => {
     return (
-        <div className=' w-full'>
+        <div className=' w-full bg-blue-50'>
             <div className='grid grid-cols-2 w-full p-4 rounded   items-center bg-blue-50'>
             <div>
                 <div className='m-2'>
