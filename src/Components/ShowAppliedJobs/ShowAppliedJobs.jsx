@@ -4,7 +4,11 @@ import { faCoffee, faLocationDot, faMoneyBill } from '@fortawesome/free-solid-sv
 import { Link } from 'react-router-dom';
 const ShowAppliedJobs = ({list}) => {
 
+   
+
     // console.log(list);
+
+
 
     let {job_title, company, job_category, location,  salary, logo, id }= list
 
