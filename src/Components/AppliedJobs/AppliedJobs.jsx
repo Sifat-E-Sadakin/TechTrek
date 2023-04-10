@@ -1,11 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ShowAppliedJobs from '../ShowAppliedJobs/ShowAppliedJobs';
+import { getShoppingCart } from '../../Utilities/LocalStorage';
 
 const AppliedJobs = () => {
 
-    let appliedJobs= useLoaderData();
-    console.log(appliedJobs);
+
+
+    
+    let [listOfAppliedJobs, setAppliedJobs] = useState([])
+
+    useEffect(()=>{
+
+        fetch('/TrendingJobs.json')
+        .then(res=> res.json())
+        .then(data=> processData(data))
+
+        function processData(data){
+            
+            let appliedJobs= getShoppingCart();
+
+            let appliedList =[];
+            // console.log(appliedJobs);
+
+            for (const id in appliedJobs) {
+
+                let applied = data.find(job => job.id == id);
+                if(applied){
+                    appliedList.push(applied);
+                }
+                
+            }
+            console.log(appliedList);
+
+            setAppliedJobs(appliedList);
+
+        }
+
+
+
+    },[])
+    
+
+
+
+
+
+
+
+
+
+    
 
     return (
         <div>
@@ -15,13 +60,13 @@ const AppliedJobs = () => {
 
 
             <div className='flex justify-end'>
-                <button className='mr-2 block border border-blue-400 bg-blue-50 rounded p-2 ' >Full time</button>
+                <button className='mr-2 block border border-blue-400 bg-blue-50 rounded p-2 ' >Onsite</button>
                 <button className='mr-2 block border border-blue-400 bg-blue-50 rounded p-2 ' >Remote</button>
             </div>
           
             <div>
                 {
-                    appliedJobs.map(job=> <ShowAppliedJobs list={job} key={job.id}></ShowAppliedJobs>)
+                    listOfAppliedJobs.map(job=> <ShowAppliedJobs list={job} key={job.id}></ShowAppliedJobs>)
                 }
             </div>
 
