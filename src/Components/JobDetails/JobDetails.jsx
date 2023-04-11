@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faLocation, faLocationDot, faMailBulk, faMoneyBill, faMoneyBill1, faMoneyBill1Wave, faPhone, faUser, faUserAlt, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
-import { addToDb } from '../../Utilities/LocalStorage';
+import { addToDb, getShoppingCart } from '../../Utilities/LocalStorage';
 import Footer from '../Footer/Footer';
 import toast, { Toaster } from 'react-hot-toast';
 import './JobDetails.css'
@@ -19,7 +19,21 @@ const JobDetails = () => {
 
     let apply = (id)=>{
 
-        console.log('applied',id);
+        let check = getShoppingCart();
+        console.log(check);
+
+        for (const iterator in check) {
+
+            if(iterator == id){
+                console.log("allready in");
+                toast('Already Applied ')
+                return;
+            }
+
+            
+        }
+
+        // console.log('applied',id);
         addToDb(id);
         notify();
 
