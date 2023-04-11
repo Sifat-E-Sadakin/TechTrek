@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ShowAppliedJobs from '../ShowAppliedJobs/ShowAppliedJobs';
 import { getShoppingCart } from '../../Utilities/LocalStorage';
+import Footer from '../Footer/Footer';
 
 const AppliedJobs = () => {
 
@@ -134,7 +135,7 @@ const AppliedJobs = () => {
 
 
           
-            
+            <Footer></Footer>
         </div>
     );
 };

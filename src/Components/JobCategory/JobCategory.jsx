@@ -5,7 +5,7 @@ const JobCategory = ({categoryList}) => {
 
     
     return (
-        <div className='text-center m-20'>
+        <div className='text-center m-20 container mx-auto'>
             <h1 className='m-4'>Job Category list</h1>
             <p>Find your job According to your background...</p>
 

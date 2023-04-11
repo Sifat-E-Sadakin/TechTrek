@@ -5,7 +5,7 @@ const TrendingJobs = ({trendingJobs}) => {
 
     
     return (
-        <div className='' >
+        <div className='container mx-auto' >
             <div className='text-center'>
                 <h1 className='my-4'>Trending Jobs</h1>
                 <p>The jobs Listed Below are the most attractive jobs now a days...</p>

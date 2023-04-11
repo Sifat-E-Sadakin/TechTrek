@@ -15,6 +15,7 @@ import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import AssignmentChart from './Components/AssignmentChart/AssignmentChart';
 import QNA from './Components/QNA/QNA';
 import NotFound from './Components/NotFound.jsx/NotFound';
+import Footer from './Components/Footer/Footer';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
         loader: LoadCategoryList,
        
       },
+     
       {
         path: '/jobDetails/:Id',
         element: <JobDetails></JobDetails>,
@@ -56,7 +58,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/*',
-        element: <NotFound></NotFound>
+        element: <NotFound>s</NotFound>
       }
      
     ],

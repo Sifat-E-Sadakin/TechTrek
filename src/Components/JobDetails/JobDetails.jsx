@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faLocation, faLocationDot, faMailBulk, faMoneyBill, faMoneyBill1, faMoneyBill1Wave, faPhone, faUser, faUserAlt, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 import { addToDb } from '../../Utilities/LocalStorage';
+import Footer from '../Footer/Footer';
 
 const JobDetails = () => {
 
@@ -56,7 +57,7 @@ const JobDetails = () => {
 
             </div>
             
-           
+           <Footer></Footer>
         </div>
     );
 };

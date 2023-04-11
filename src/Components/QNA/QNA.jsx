@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 
 const QNA = () => {
     return (
@@ -46,6 +47,7 @@ const QNA = () => {
 
                 </div>
             </ol>
+            <Footer></Footer>
         </div>
     );
 };

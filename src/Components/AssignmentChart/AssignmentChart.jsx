@@ -18,6 +18,7 @@ import {
   Legend,
   Scatter
 } from "recharts";
+import Footer from '../Footer/Footer';
 
 
 const AssignmentChart = () => {
@@ -171,6 +172,8 @@ const AssignmentChart = () => {
     </RadarChart>
 
             </div>
+
+            <Footer></Footer>
            
             
         </div>

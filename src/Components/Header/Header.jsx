@@ -4,7 +4,7 @@ import JobCategory from '../JobCategory/JobCategory';
 const Header = () => {
     return (
         <div className=' w-full bg-blue-50'>
-            <div className=' md:grid grid-cols-2 w-full p-4 rounded items-center bg-blue-50 '>
+            <div className=' md:grid grid-cols-2 w-full p-4 rounded items-center bg-blue-50 container mx-auto '>
             <div>
                 <div className='m-2'>
                     <h1>Take Your <br /> First step <br />  <span className='text-blue-600'>ASAP</span> </h1>

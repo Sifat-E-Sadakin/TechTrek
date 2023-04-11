@@ -5,6 +5,7 @@ import { useLoaderData } from 'react-router-dom';
 import TrendingJobs from '../TrendingJobs/TrendingJobs';
 import { LoadTrendingJobs } from '../LoadData/LoadData';
 import { data } from 'autoprefixer';
+import Footer from '../Footer/Footer';
 
 const Landing = () => {
 
@@ -66,6 +67,8 @@ function showAll(){
                  <button className='btn' onClick={showAll} id='show-all'>Show All Jobs</button>
 
             </div>
+
+            <Footer></Footer>
 
             
             
