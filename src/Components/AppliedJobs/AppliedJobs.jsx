@@ -101,11 +101,14 @@ const AppliedJobs = () => {
 
 
     return (
-        <div>
-            <div className='text-center py-10'>
+        <div className=''>
+            <div className='text-center py-10 bg-blue-50'>
                   <h1>Applied Jobs</h1>
             </div>
 
+
+            <div className='container mx-auto'>
+            
 
             <div className='flex justify-end'>
                 <button onClick={filterOnsite} className='mr-2 block border border-blue-400 bg-blue-50 rounded p-2 ' >Onsite</button>
@@ -135,8 +138,16 @@ const AppliedJobs = () => {
 
 
           
-            <Footer></Footer>
         </div>
+        <Footer></Footer>
+
+
+            </div>
+
+    
+
+            
+           
     );
 };
 

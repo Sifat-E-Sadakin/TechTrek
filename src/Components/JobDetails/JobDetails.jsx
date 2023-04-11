@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faLocation, faLocationDot, faMailBulk, faMoneyBill, faMoneyBill1, faMoneyBill1Wave, faPhone, faUser, faUserAlt, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 import { addToDb } from '../../Utilities/LocalStorage';
 import Footer from '../Footer/Footer';
+import toast, { Toaster } from 'react-hot-toast';
 
 const JobDetails = () => {
 
@@ -12,11 +13,18 @@ const JobDetails = () => {
 
     let {id, job_description,job_responsibility,educational_requirement, experience, phone,email , salary, job_title, location }=jobDetails;
 
+
+    const notify = () => toast('Applied Successfully');
+
     let apply = (id)=>{
+
         console.log('applied',id);
         addToDb(id);
+        notify();
 
     }
+
+    
 
     return (
         <div>
@@ -24,7 +32,7 @@ const JobDetails = () => {
                 <h1>Job Details</h1>
             </div>
 
-            <div className='py-10' style={{display:'grid', gridTemplateColumns:'2fr 1fr', gap:"50px"}}>
+            <div className='py-10 container mx-auto' style={{display:'grid', gridTemplateColumns:'2fr 1fr', gap:"50px"}}>
                  <div>
                     <h2 className='my-5'><span className='font-semibold'>Job Description: </span> {job_description}</h2>
                     <h2 className='my-5'><span className='font-semibold'>Job Responsibility: </span> {job_responsibility}</h2>
@@ -56,6 +64,8 @@ const JobDetails = () => {
                 
 
             </div>
+
+            <Toaster></Toaster>
             
            <Footer></Footer>
         </div>

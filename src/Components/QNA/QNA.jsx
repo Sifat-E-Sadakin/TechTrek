@@ -3,7 +3,8 @@ import Footer from '../Footer/Footer';
 
 const QNA = () => {
     return (
-        <div className='bg-blue-200 p-10 rounded-lg'>
+        <div className='bg-blue-200  rounded-lg '>
+            <div className='container mx-auto'>
             <h1 className='text-center m-10'>QNA</h1>
             <ol className='list-decimal list-outside py-10'>
                 <div className='p-5 '>
@@ -47,7 +48,10 @@ const QNA = () => {
 
                 </div>
             </ol>
-            <Footer></Footer>
+
+            </div>
+         
+            <Footer ></Footer>
         </div>
     );
 };
