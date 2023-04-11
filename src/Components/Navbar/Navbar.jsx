@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Navbar = () => {
     return (
@@ -20,13 +21,17 @@ const Navbar = () => {
                         </div>
                         <a className="btn btn-ghost normal-case text-xl">TechTrek</a>
                     </div>
-                    <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal px-1">
-                            <Link className='m-2 text-blue-950' to='/'>Home</Link>
-                            <Link className='m-2 text-blue-950' to='/statistics'>Statistics</Link>
-                            <Link className='m-2 text-blue-950' to='/appliedJobs'>Applied Jobs</Link>
-                            <Link className='m-2 text-blue-950' to='/qna'>QNA</Link>
-                            <Link className='m-2 text-blue-950' to='/contacts'>Contacts</Link>
+                    <div className="navbar-center hidden lg:flex ">
+                        <ul className="menu menu-horizontal px-1 ">
+                            <div className='flex gap-2'>
+                            <ActiveLink to='/'>  Home</ActiveLink>
+                            <ActiveLink to='/statistics'>Statistics</ActiveLink>
+                            <ActiveLink to='/appliedJobs'>Applied Jobs</ActiveLink>
+                            <ActiveLink to='/qna'>QNA</ActiveLink>
+                            <ActiveLink to='/contacts'>Contacts</ActiveLink>
+
+                            </div>
+                            
                         </ul>
                     </div>
                     <div className="navbar-end">
