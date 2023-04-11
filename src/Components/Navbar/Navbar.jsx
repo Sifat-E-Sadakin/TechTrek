@@ -26,6 +26,7 @@ const Navbar = () => {
                             <Link className='m-2' to='/statistics'>Statistics</Link>
                             <Link className='m-2' to='/appliedJobs'>Applied Jobs</Link>
                             <Link className='m-2' to='/qna'>QNA</Link>
+                            <Link className='m-2' to='/contacts'>Contacts</Link>
                         </ul>
                     </div>
                     <div className="navbar-end">

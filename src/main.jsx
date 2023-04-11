@@ -14,6 +14,7 @@ import JobDetails from './Components/JobDetails/JobDetails';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import AssignmentChart from './Components/AssignmentChart/AssignmentChart';
 import QNA from './Components/QNA/QNA';
+import NotFound from './Components/NotFound.jsx/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/*',
-        element: <div>440044</div>
+        element: <NotFound></NotFound>
       }
      
     ],
