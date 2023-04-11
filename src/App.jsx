@@ -5,16 +5,28 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import { Outlet, NavLink } from 'react-router-dom'
 import DropdownMenu from './Components/Test/DropdownMenu'
+import {
+  // existing code
+  useNavigation,
+} from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const navigation = useNavigation();
 
   return (
     <div className="App  ">
       
       <Navbar></Navbar>
-     
       
+      <div className={
+          navigation.state === "loading" ? "loader" : ""
+        }>
+      
+      </div>
+      
+
       <Outlet></Outlet>
 
      
