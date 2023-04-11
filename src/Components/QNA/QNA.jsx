@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../Footer/Footer';
 
+    
 const QNA = () => {
+    
+
+    useEffect(()=>{
+        window.scroll(0,0);
+    },[])
+    
+    
+    
     return (
         <div className='bg-blue-200  rounded-lg '>
             <div className='container mx-auto'>

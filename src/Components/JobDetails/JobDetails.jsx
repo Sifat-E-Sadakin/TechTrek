@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faLocation, faLocationDot, faMailBulk, faMoneyBill, faMoneyBill1, faMoneyBill1Wave, faPhone, faUser, faUserAlt, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
@@ -24,6 +24,10 @@ const JobDetails = () => {
         notify();
 
     }
+
+    useEffect(()=>{
+        window.scroll(0,0);
+    },[])
 
     
 

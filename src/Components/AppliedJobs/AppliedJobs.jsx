@@ -6,6 +6,11 @@ import Footer from '../Footer/Footer';
 
 const AppliedJobs = () => {
 
+    useEffect(()=>{
+        window.scroll(0,0);
+    },[])
+    
+
 
 
     

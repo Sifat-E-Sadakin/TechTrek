@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ssignmentChart.css'
 
 import {
@@ -24,6 +24,11 @@ import Footer from '../Footer/Footer';
 
 
 const AssignmentChart = () => {
+
+  useEffect(()=>{
+    window.scroll(0,0);
+},[])
+
 
   const data = [
     {
