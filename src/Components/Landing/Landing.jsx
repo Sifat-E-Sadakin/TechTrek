@@ -37,7 +37,7 @@ const Landing = () => {
 },[]);
 
 function showAll(){
-    console.log(allJobList);
+    // console.log(allJobList);
     setTrendingJobs(allJobList);
 
     let btn= document.getElementById('show-all');

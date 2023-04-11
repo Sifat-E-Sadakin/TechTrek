@@ -19,7 +19,7 @@ const AppliedJobs = () => {
     let [remoteJobs, setRemoteJobs] = useState([])
 
     let fullList = useLoaderData();
-    console.log(fullList);
+    // console.log(fullList);
 
     useEffect(()=>{
 
@@ -42,7 +42,7 @@ const AppliedJobs = () => {
                 }
                 
             }
-            console.log(appliedList);
+            // console.log(appliedList);
 
             setAppliedJobs(appliedList);
            

@@ -20,12 +20,12 @@ const JobDetails = () => {
     let apply = (id)=>{
 
         let check = getShoppingCart();
-        console.log(check);
+        // console.log(check);
 
         for (const iterator in check) {
 
             if(iterator == id){
-                console.log("allready in");
+                // console.log("already in");
                 toast('Already Applied ')
                 return;
             }
