@@ -5,6 +5,7 @@ import { faCoffee, faLocation, faLocationDot, faMailBulk, faMoneyBill, faMoneyBi
 import { addToDb } from '../../Utilities/LocalStorage';
 import Footer from '../Footer/Footer';
 import toast, { Toaster } from 'react-hot-toast';
+import './JobDetails.css'
 
 const JobDetails = () => {
 
@@ -32,7 +33,7 @@ const JobDetails = () => {
                 <h1>Job Details</h1>
             </div>
 
-            <div className='py-10 container mx-auto' style={{display:'grid', gridTemplateColumns:'2fr 1fr', gap:"50px"}}>
+            <div className='py-10 container mx-auto' id='jobDetails' >
                  <div>
                     <h2 className='my-5'><span className='font-semibold'>Job Description: </span> {job_description}</h2>
                     <h2 className='my-5'><span className='font-semibold'>Job Responsibility: </span> {job_responsibility}</h2>

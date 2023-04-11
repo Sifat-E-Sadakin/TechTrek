@@ -17,6 +17,7 @@ const Navbar = () => {
                                 <Link  to='/statistics'>Statistics</Link>
                                 <Link  to='/appliedJobs'>Applied Jobs</Link>
                                 <Link  to='/qna'>QNA</Link>
+                                <Link  to='/contact'>Contact</Link>
                             </ul>
                         </div>
                         <a className="btn btn-ghost normal-case text-xl">TechTrek</a>

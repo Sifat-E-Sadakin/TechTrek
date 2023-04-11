@@ -19,8 +19,8 @@ const ShowAppliedJobs = ({list}) => {
 
             <div className='flex justify-between border p-5 items-center m-5'>
 
-            <div className='flex '>
-                <div className='bg-blue-100 p-10'>
+            <div className='md:flex '>
+                <div className='md:bg-blue-100 md:p-10'>
                     <img src={logo} alt="" style={{width:'250px',height:''}} />
                 </div>
                 <div className='mx-3'>

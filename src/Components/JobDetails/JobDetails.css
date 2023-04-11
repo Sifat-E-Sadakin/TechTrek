@@ -1,0 +1,14 @@
+
+
+#jobDetails{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap: 50px;
+}
+@media (max-width: 576px) {
+    #jobDetails{
+        display:flex;
+        flex-direction: column;
+    }
+    
+}
